@@ -59,3 +59,21 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+# Event System (Laravel 12 + Vue 3)
+
+مشروع تخرج — نظام إدارة الفعاليات والتذاكر.
+
+## المتطلبات
+- PHP >= 8.2
+- Composer
+- Node.js >= 18
+- MySQL / PostgreSQL
+- Git
+
+## الإعداد محليًا
+1. نسخ المشروع:
+   ```bash
+   git clone git@github.com:USERNAME/event-system.git
+   cd event-system
