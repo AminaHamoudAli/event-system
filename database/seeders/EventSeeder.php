@@ -1,21 +1,20 @@
 <?php
 
 namespace Database\Seeders;
-use Illuminate\Database\Seeder;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
 use App\Models\Event;
 use App\Models\User;
+use Illuminate\Support\Str;
 
 class EventSeeder extends Seeder
 {
     public function run(): void
     {
-        // نجيب أول 5 مستخدمين ليكونوا منظمين
-        $organizers = User::take(5)->get();
+        $organizers = User::where('role', 'organizer')->get();
 
         foreach ($organizers as $organizer) {
-            Event::factory()->count(2)->create([
+            Event::factory()->count(3)->create([
                 'organizer_id' => $organizer->id,
             ]);
         }
