@@ -1,11 +1,3 @@
-@import 'tailwindcss';
-
-/* Tailwind Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* يمكنك إضافة أي CSS مخصص بعد ذلك */
-body {
-    font-family: 'Instrument Sans', sans-serif;
-}
