@@ -18,5 +18,9 @@ class File extends Model
     public function event() {
         return $this->belongsTo(Event::class);
     }
+    public function getFileUrlAttribute() {
+    return asset('storage/' . $this->file_path);
+}
+
 }
 

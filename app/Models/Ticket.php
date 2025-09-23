@@ -24,6 +24,10 @@ class Ticket extends Model
     public function attendee() {
         return $this->belongsTo(User::class, 'attendee_id');
     }
+    public function orders() {
+    return $this->hasMany(Order::class);
+}
+
 }
 
 
